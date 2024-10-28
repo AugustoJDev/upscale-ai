@@ -1,6 +1,5 @@
 import os
 import subprocess
-import shutil
 
 def run_bat_file(bat_file):
     try:
@@ -21,15 +20,15 @@ def delete_files(folder):
 def main():
     base_path = os.path.abspath(os.path.dirname(__file__))
 
-    # Executa o arquivo start.bat
+    # Executa o arquivo start.bat no diretório do script
     bat_file = os.path.join(base_path, "start.bat")
     run_bat_file(bat_file)
 
-    # Exclui todos os arquivos da pasta input
+    # Exclui todos os arquivos da pasta 'input' dentro do diretório do script
     input_folder = os.path.join(base_path, "input")
     delete_files(input_folder)
 
-    # Abre a pasta output
+    # Abre a pasta 'output' dentro do diretório do script
     output_folder = os.path.join(base_path, "output")
     os.startfile(output_folder)
 
