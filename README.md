@@ -30,3 +30,7 @@ pyinstaller --onefile --icon=logo.ico main.py
 ```
 
 Inside the `dist` folder that will be created, you will find the `main.exe` executable. Simply copy it to the desired location and run it!
+
+### If this project was useful to you, consider donate to me, so I can buy a delicious Starbucks 😋😋
+
+[![Donate](https://i.imgur.com/h6CM9tR.jpg)](https://www.paypal.com/donate/?business=DAPMXVUCLW7QE&no_recurring=0&currency_code=USD)
